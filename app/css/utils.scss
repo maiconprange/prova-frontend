@@ -1,0 +1,53 @@
+//Margin bottom
+@for $i from 1 through 30 {
+    .margin-bottom-#{$i} {
+        margin-bottom: 0px + $i;
+    }
+}
+
+//Font-size
+@for $i from 1 through 50 {
+    .font-size-#{$i} {
+        font-size: 0px + $i;
+    }
+}
+
+//Margin top
+@for $i from 1 through 30 {
+    .margin-top-#{$i} {
+        margin-top: 0px + $i;
+    }
+}
+
+//padding
+@for $i from 1 through 30 {
+    .padding-#{$i} {
+        padding: 0px + $i;
+    }
+}
+
+//Margin left
+@for $i from 1 through 30 {
+    .margin-left-#{$i} {
+        margin-left: 0px + $i;
+    }
+}
+
+//Margin right
+@for $i from 1 through 30 {
+    .margin-right-#{$i} {
+        margin-right: 0px + $i;
+    }
+}
+
+//Margin right
+@for $i from 1 through 8 {
+    $width: percentage(1 / $i);
+    .col-#{$i} {
+        width: $width !important;
+    }
+}
+
+.mouse{
+    cursor: pointer;
+}
