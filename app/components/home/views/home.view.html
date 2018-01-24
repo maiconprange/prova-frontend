@@ -1,3 +1,32 @@
 <div class="container">
-    Teste
+    <div class="row">
+        <div class="col-md-12 margin-top-30 album-style" ng-repeat="album in vm.albuns | orderBy : '-album.releaseDate': reverse ">
+            <div class="col-md-2 margin-top-8">
+                <img class="img-responsive center-block" src="{{album.album.artworkUrl100}}" alt="">
+            </div>
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-12">
+                        <small class="text-gray">{{album.album.releaseDate | date: 'yyyy'}}</small>
+                        <br>
+                    </div>
+                </div>
+                <span class="font-size-20 text-blue ">{{album.album.collectionName}}</span>
+                <hr>
+                <div class="row">
+                    <div class="col-md-12 " ng-repeat="music in album.musics" ng-if="music">
+                        <div class="col-md-12">
+                            <div class="col-md-10 name-music">
+                                <span class="pull-left">{{music.trackCensoredName}}</span>
+                            </div>
+                            <div class="col-md-2 text-gray time-music hidden-xs">
+                                <span class="pull-right">{{music.trackTimeMillis | date: 'mm:ss'}}</span>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

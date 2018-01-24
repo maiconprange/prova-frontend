@@ -1,4 +1,4 @@
-export default /*@ngInject*/ class LoginServices {
+export default /*@ngInject*/ class HomeServices {
     constructor($http, ServicesUrl, $q, Services) {
         this._$http = $http;
         this._ServicesUrl = ServicesUrl;
@@ -6,7 +6,11 @@ export default /*@ngInject*/ class LoginServices {
         this._Services = Services;
     }
 
-    getLogin(params) {
-        return this._Services.makePost(this._ServicesUrl.loginUrl(), params);
+    getAlbuns(params) {
+        return this._Services.makeGet(this._ServicesUrl.getAlbunsUrl(), params);
+    }
+
+    getMusics(params) {
+        return this._Services.makeGet(this._ServicesUrl.getAlbunsUrl(), params);
     }
 }

@@ -5,7 +5,7 @@ import '../../css/utils.scss';
 import homeTemplate from '../../components/home/views/home.view.html';
 import '../../components/home/scss/home.scss';
 
-export default /*@ngInject*/ function ($stateProvider, $urlRouterProvider, cfpLoadingBarProvider, blockUIConfig) {
+export default /*@ngInject*/ function ($stateProvider, $urlRouterProvider, cfpLoadingBarProvider) {
     $urlRouterProvider.otherwise('/home');
     $stateProvider
         .state('home', {
@@ -21,9 +21,4 @@ export default /*@ngInject*/ function ($stateProvider, $urlRouterProvider, cfpLo
 
     cfpLoadingBarProvider.includeBar = true;
     cfpLoadingBarProvider.includeSpinner = true;
-
-    blockUIConfig.autoBlock = false;
-    blockUIConfig.resetOnException = false;
-    blockUIConfig.message = 'Carregando...';
-    blockUIConfig.blockBrowserNavigation = true;
 }

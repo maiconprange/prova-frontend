@@ -1,3 +1,7 @@
+body {
+    background: #ECF0F1!important;
+}
+
 //Margin bottom
 @for $i from 1 through 30 {
     .margin-bottom-#{$i} {
@@ -50,4 +54,43 @@
 
 .mouse{
     cursor: pointer;
+}
+
+.margin-auto{
+    margin: auto;
+}
+
+.text-gray{
+    color: rgb(192, 192, 192);
+}
+
+.text-blue{
+    color: #4A90D8;
+    font-weight: bold;
+}
+
+.album-style{
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 3px;
+    border: 1px solid #dee1e2;
+}
+
+.title-album{
+    border-bottom: 1px solid gray;
+}
+
+.time-music{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.name-music{
+    color: #292929;;
+    margin-left: -15px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
 }

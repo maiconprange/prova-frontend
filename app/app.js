@@ -6,13 +6,8 @@ import 'angular-animate';
 import 'angular-messages';
 import 'angular-cookies';
 import 'angular-i18n/angular-locale_pt-br';
-import 'angular-block-ui/dist/angular-block-ui.min.css';
-import 'angular-block-ui/dist/angular-block-ui.min.js';
-
-//vendor
-import './vendor/bootstrap/css/bootstrap.min.css';
-import './vendor/font-awesome/css/font-awesome.min.css';
-import './vendor/bootstrap/js/bootstrap.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 
 import $ from 'jquery/dist/jquery.min';
 window.$ = $;
@@ -53,7 +48,6 @@ export default angular.module('hiplatform', [
     'ui.bootstrap',
     'angular-loading-bar',
     'toastr',
-    'blockUI',
 	])
 
 	//Home
